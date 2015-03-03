@@ -27,6 +27,7 @@ void loop() {
   /*code below makes the lights blink all at once if the analog value
     is between 0 - 699 */
   if (analogValue <= trick1) {
+    //turns on all the LEDS
     digitalWrite(ledPin13, HIGH);
     digitalWrite(ledPin3, HIGH);
     digitalWrite(ledPin11, HIGH);
@@ -35,6 +36,7 @@ void loop() {
     digitalWrite(ledPin5, HIGH);
     digitalWrite(ledPin7, HIGH);
     delay(100);
+    // turns off all the LEDS after 100 ms delay
     digitalWrite(ledPin13, LOW);
     digitalWrite(ledPin3, LOW);
     digitalWrite(ledPin11, LOW);
